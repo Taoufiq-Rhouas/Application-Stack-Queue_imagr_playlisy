@@ -1,0 +1,152 @@
+$px_0: 0px;
+$color_p_menu:yellow;
+$color_p_btn:#0abde3;
+$pading_btn:120px 240px;
+$opacity_btn_before:80%;
+$background_color_btn:#8395a7;
+$background-color_btn_hvr:#8395a7;
+$color_p_btn_hvr: #3d3d3d;
+$pading_btn_hvr:150px 250px;
+$opacity_btn_after:100%;
+$transition_btn_hvr:0.4s;
+$margin_top_div_container_1:400px;
+$font_size_btn_hvr:50px;
+$font_size_btn:30px;
+$width_div_container_1:66%;
+$border_radius_btn:15px;
+$box_shadow_btn: 0 0 6em #0abde3;
+$background_color_menu:#57606f;
+$background_color_menu_hover:#747d8c;
+$font_family_btn:cursive;
+
+
+body{
+    margin: $px_0;
+    padding: $px_0;
+    background-image: url("person-s-gray-hoodie-1482476.jpg");
+    // background-color: #353b48;
+    background-size: cover;
+}
+#menu{
+    display: flex;
+    #div_logo{
+        width: 30%;
+        background-color: $background_color_menu;
+    }
+    #div_menu{
+        background-color: $background_color_menu;
+        width: 40%;
+        ul{
+            list-style-type: none;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: $background_color_menu;
+            display: flex;
+            justify-content: space-between;
+            li a{
+                color: white;
+                text-align: center;
+                padding: 16px 100px;
+                display: block;
+                text-decoration: none;
+                font-family: $font_family_btn;
+            }
+            li a:hover {
+                    background-color: $background_color_menu_hover;
+            }
+        }
+    }
+    #div_rst{
+        width: 30%;
+        background-color: $background_color_menu;
+    }
+}
+.active {
+    background-color: #2f3542;
+  }
+
+
+// #div_menu 
+// #div_menu ul 
+
+
+
+
+
+
+
+
+#div_container_1{
+    display: flex;
+    /*justify-content: center;*/
+    justify-content: space-between;
+    // background-color: red;
+    margin-top: $margin_top_div_container_1;
+    width: $width_div_container_1;
+}
+// #div_galerie{
+//     a{
+        
+//     }
+    
+// }
+// #div_playlist{
+//     // color: $color_p_btn;
+// }
+#btn_galerie{
+    background-color: $background_color_btn;
+    color: $color_p_btn;
+    padding: $pading_btn;
+    opacity: $opacity_btn_before;
+    transition: $transition_btn_hvr;
+    border-radius: $border_radius_btn; 
+    font-size: $font_size_btn;
+    box-shadow: $box_shadow_btn;
+    text-decoration: none;
+    font-family: $font_family_btn;
+    background-image: url(211678-256.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn_playlist{
+    background-color: $background_color_btn;
+    color: $color_p_btn;
+    padding: $pading_btn;
+    opacity: $opacity_btn_before;
+    transition: $transition_btn_hvr;
+    border-radius: $border_radius_btn; 
+    font-size: $font_size_btn;
+    box-shadow: $box_shadow_btn;
+    text-decoration: none;
+    font-family: $font_family_btn;
+    background-image: url(3695056-256.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#btn_galerie:hover{
+    background-color: $background_color_btn_hvr;
+    color: $color_p_btn_hvr;
+    padding: $pading_btn_hvr;
+    opacity: $opacity_btn_after;
+    font-size: $font_size_btn_hvr;
+    // transition: $transition_btn_hvr;
+    // margin-right: 30px;
+}
+#btn_playlist:hover{
+    background-color: $background_color_btn_hvr;
+    color: $color_p_btn_hvr;
+    padding: $pading_btn_hvr;
+    opacity: $opacity_btn_after;
+    font-size: $font_size_btn_hvr;
+    // transition: $transition_btn_hvr;
+    // margin-right: 30px;
+}
+// #btn_playlist::after{
+    // background-color: white;
+    // color: $color_p_btn_hvr;
+    // padding: $pading_btn_hvr;
+    // opacity: $opacity_btn_after;
+    // transition: $transition_btn_hvr;
+    // margin-right: 30px;
+// }
